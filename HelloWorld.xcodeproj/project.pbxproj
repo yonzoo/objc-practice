@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		813BD6AC2BA076D800A136D9 /* Triangular.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD6AB2BA076D800A136D9 /* Triangular.m */; };
+		813BD6B02BA0795000A136D9 /* Factorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD6AF2BA0795000A136D9 /* Factorial.m */; };
+		813BD6B52BA0814B00A136D9 /* DigitsSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD6B42BA0814B00A136D9 /* DigitsSum.m */; };
 		896D80792B9C7EC000DA3CFE /* DegreesConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 896D80782B9C7EC000DA3CFE /* DegreesConverter.m */; };
 		896D80822B9C7F6700DA3CFE /* Boat.m in Sources */ = {isa = PBXBuildFile; fileRef = 896D80812B9C7F6700DA3CFE /* Boat.m */; };
 		896D80902B9C8A3700DA3CFE /* PolynomialEvaluation.m in Sources */ = {isa = PBXBuildFile; fileRef = 896D808F2B9C8A3700DA3CFE /* PolynomialEvaluation.m */; };
@@ -30,6 +33,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		813BD6A82BA075D300A136D9 /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
+		813BD6A92BA076BA00A136D9 /* Triangular.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Triangular.h; sourceTree = "<group>"; };
+		813BD6AB2BA076D800A136D9 /* Triangular.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Triangular.m; sourceTree = "<group>"; };
+		813BD6AE2BA078D400A136D9 /* Factorial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Factorial.h; sourceTree = "<group>"; };
+		813BD6AF2BA0795000A136D9 /* Factorial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Factorial.m; sourceTree = "<group>"; };
+		813BD6B42BA0814B00A136D9 /* DigitsSum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitsSum.m; sourceTree = "<group>"; };
+		813BD6B62BA0815A00A136D9 /* DigitsSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitsSum.h; sourceTree = "<group>"; };
 		896D80742B9C7E0A00DA3CFE /* DegreesConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DegreesConverter.h; sourceTree = "<group>"; };
 		896D80782B9C7EC000DA3CFE /* DegreesConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DegreesConverter.m; sourceTree = "<group>"; };
 		896D80812B9C7F6700DA3CFE /* Boat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boat.m; sourceTree = "<group>"; };
@@ -61,6 +71,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		813BD6A72B9F5FE000A136D9 /* program_looping */ = {
+			isa = PBXGroup;
+			children = (
+				813BD6B12BA0811B00A136D9 /* digits_sum */,
+				813BD6AD2BA078B600A136D9 /* factorial */,
+				813BD6AA2BA076BE00A136D9 /* triangular_number */,
+				813BD6A82BA075D300A136D9 /* exercises.md */,
+			);
+			path = program_looping;
+			sourceTree = "<group>";
+		};
+		813BD6AA2BA076BE00A136D9 /* triangular_number */ = {
+			isa = PBXGroup;
+			children = (
+				813BD6A92BA076BA00A136D9 /* Triangular.h */,
+				813BD6AB2BA076D800A136D9 /* Triangular.m */,
+			);
+			path = triangular_number;
+			sourceTree = "<group>";
+		};
+		813BD6AD2BA078B600A136D9 /* factorial */ = {
+			isa = PBXGroup;
+			children = (
+				813BD6AE2BA078D400A136D9 /* Factorial.h */,
+				813BD6AF2BA0795000A136D9 /* Factorial.m */,
+			);
+			path = factorial;
+			sourceTree = "<group>";
+		};
+		813BD6B12BA0811B00A136D9 /* digits_sum */ = {
+			isa = PBXGroup;
+			children = (
+				813BD6B42BA0814B00A136D9 /* DigitsSum.m */,
+				813BD6B62BA0815A00A136D9 /* DigitsSum.h */,
+			);
+			path = digits_sum;
+			sourceTree = "<group>";
+		};
 		896D80772B9C7E8800DA3CFE /* data_types_and_expressions */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +216,7 @@
 			children = (
 				896D807A2B9C7EF500DA3CFE /* classes_objects_and_methods */,
 				896D80772B9C7E8800DA3CFE /* data_types_and_expressions */,
+				813BD6A72B9F5FE000A136D9 /* program_looping */,
 				899EDD5A2B96378E0064D4D8 /* main.m */,
 			);
 			path = HelloWorld;
@@ -237,7 +286,10 @@
 				896D80792B9C7EC000DA3CFE /* DegreesConverter.m in Sources */,
 				896D80822B9C7F6700DA3CFE /* Boat.m in Sources */,
 				896D809A2B9C8E4F00DA3CFE /* Complex.m in Sources */,
+				813BD6B52BA0814B00A136D9 /* DigitsSum.m in Sources */,
+				813BD6AC2BA076D800A136D9 /* Triangular.m in Sources */,
 				896D80932B9C8C0F00DA3CFE /* ExpressionEvaluation.m in Sources */,
+				813BD6B02BA0795000A136D9 /* Factorial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

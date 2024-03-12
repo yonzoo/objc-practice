@@ -13,6 +13,9 @@
 #import "Complex.h"
 #import "Rectangle.h"
 #import "Calculator.h"
+#import "Triangular.h"
+#import "Factorial.h"
+#import "DigitsSum.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -39,6 +42,16 @@ int main(int argc, const char * argv[]) {
         
         // Exercise 8
 //        [Calculator test];
+        
+        // Program looping
+        // Exercise 2
+//        [Triangular test];
+        
+        // Exercise 3
+//        [Factorial test];
+        
+        // Exercise 8
+        [DigitsSum test];
     }
     return 0;
 }

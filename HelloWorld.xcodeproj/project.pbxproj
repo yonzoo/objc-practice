@@ -10,6 +10,8 @@
 		813BD6AC2BA076D800A136D9 /* Triangular.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD6AB2BA076D800A136D9 /* Triangular.m */; };
 		813BD6B02BA0795000A136D9 /* Factorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD6AF2BA0795000A136D9 /* Factorial.m */; };
 		813BD6B52BA0814B00A136D9 /* DigitsSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD6B42BA0814B00A136D9 /* DigitsSum.m */; };
+		813BD6BD2BA0E3A400A136D9 /* Divisable.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD6BC2BA0E3A400A136D9 /* Divisable.m */; };
+		813BD6C12BA1AF3E00A136D9 /* DigitsToWords.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD6C02BA1AF3E00A136D9 /* DigitsToWords.m */; };
 		896D80792B9C7EC000DA3CFE /* DegreesConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 896D80782B9C7EC000DA3CFE /* DegreesConverter.m */; };
 		896D80822B9C7F6700DA3CFE /* Boat.m in Sources */ = {isa = PBXBuildFile; fileRef = 896D80812B9C7F6700DA3CFE /* Boat.m */; };
 		896D80902B9C8A3700DA3CFE /* PolynomialEvaluation.m in Sources */ = {isa = PBXBuildFile; fileRef = 896D808F2B9C8A3700DA3CFE /* PolynomialEvaluation.m */; };
@@ -40,6 +42,11 @@
 		813BD6AF2BA0795000A136D9 /* Factorial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Factorial.m; sourceTree = "<group>"; };
 		813BD6B42BA0814B00A136D9 /* DigitsSum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitsSum.m; sourceTree = "<group>"; };
 		813BD6B62BA0815A00A136D9 /* DigitsSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitsSum.h; sourceTree = "<group>"; };
+		813BD6BB2BA0E37200A136D9 /* Divisable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Divisable.h; sourceTree = "<group>"; };
+		813BD6BC2BA0E3A400A136D9 /* Divisable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Divisable.m; sourceTree = "<group>"; };
+		813BD6BE2BA0E86700A136D9 /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
+		813BD6C02BA1AF3E00A136D9 /* DigitsToWords.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitsToWords.m; sourceTree = "<group>"; };
+		813BD6C22BA1AF4A00A136D9 /* DigitsToWords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitsToWords.h; sourceTree = "<group>"; };
 		896D80742B9C7E0A00DA3CFE /* DegreesConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DegreesConverter.h; sourceTree = "<group>"; };
 		896D80782B9C7EC000DA3CFE /* DegreesConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DegreesConverter.m; sourceTree = "<group>"; };
 		896D80812B9C7F6700DA3CFE /* Boat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boat.m; sourceTree = "<group>"; };
@@ -107,6 +114,34 @@
 				813BD6B62BA0815A00A136D9 /* DigitsSum.h */,
 			);
 			path = digits_sum;
+			sourceTree = "<group>";
+		};
+		813BD6B72BA0E30600A136D9 /* making_decisions */ = {
+			isa = PBXGroup;
+			children = (
+				813BD6BF2BA1AF1800A136D9 /* digits_to_words */,
+				813BD6BA2BA0E36000A136D9 /* divisable */,
+				813BD6BE2BA0E86700A136D9 /* exercises.md */,
+			);
+			path = making_decisions;
+			sourceTree = "<group>";
+		};
+		813BD6BA2BA0E36000A136D9 /* divisable */ = {
+			isa = PBXGroup;
+			children = (
+				813BD6BB2BA0E37200A136D9 /* Divisable.h */,
+				813BD6BC2BA0E3A400A136D9 /* Divisable.m */,
+			);
+			path = divisable;
+			sourceTree = "<group>";
+		};
+		813BD6BF2BA1AF1800A136D9 /* digits_to_words */ = {
+			isa = PBXGroup;
+			children = (
+				813BD6C02BA1AF3E00A136D9 /* DigitsToWords.m */,
+				813BD6C22BA1AF4A00A136D9 /* DigitsToWords.h */,
+			);
+			path = digits_to_words;
 			sourceTree = "<group>";
 		};
 		896D80772B9C7E8800DA3CFE /* data_types_and_expressions */ = {
@@ -217,6 +252,7 @@
 				896D807A2B9C7EF500DA3CFE /* classes_objects_and_methods */,
 				896D80772B9C7E8800DA3CFE /* data_types_and_expressions */,
 				813BD6A72B9F5FE000A136D9 /* program_looping */,
+				813BD6B72BA0E30600A136D9 /* making_decisions */,
 				899EDD5A2B96378E0064D4D8 /* main.m */,
 			);
 			path = HelloWorld;
@@ -288,8 +324,10 @@
 				896D809A2B9C8E4F00DA3CFE /* Complex.m in Sources */,
 				813BD6B52BA0814B00A136D9 /* DigitsSum.m in Sources */,
 				813BD6AC2BA076D800A136D9 /* Triangular.m in Sources */,
+				813BD6BD2BA0E3A400A136D9 /* Divisable.m in Sources */,
 				896D80932B9C8C0F00DA3CFE /* ExpressionEvaluation.m in Sources */,
 				813BD6B02BA0795000A136D9 /* Factorial.m in Sources */,
+				813BD6C12BA1AF3E00A136D9 /* DigitsToWords.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

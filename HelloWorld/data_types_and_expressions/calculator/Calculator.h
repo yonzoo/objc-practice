@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(double) memoryAdd: (double) value; // add value into memory
 -(double) memorySubtract: (double) value; // subtract value from memory
 +(void) test;
++(void) testWithConditions;
++(void) testWithNumberOperatorFormat;
 
 @end
 

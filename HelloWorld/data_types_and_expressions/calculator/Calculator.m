@@ -104,5 +104,74 @@
     NSLog(@"The result after subtract 11 from memory = %g", [deskCalc memorySubtract: 11]);
 }
 
++(void)testWithConditions {
+    double value1, value2;
+    char operator;
+    Calculator *deskCalc = [[Calculator alloc] init];
+    NSLog (@"Type in your expression.");
+    scanf ("%lf %c %lf", &value1, &operator, &value2);
+    if ( operator == '+' ) {
+        [deskCalc setAccumulator: value1];
+        [deskCalc add: value2];
+    }
+    else if ( operator == '-' ) {
+        [deskCalc setAccumulator: value1];
+        [deskCalc subtract: value2];
+    }
+    else if ( operator == '*' ) {
+        [deskCalc multiply: value2];
+    }
+    else if ( operator == '/' ) {
+        if ( value2 == 0 )
+            NSLog (@"Division by zero.");
+        else
+            [deskCalc setAccumulator: value1];
+            [deskCalc divide: value2];
+    }
+    else
+        NSLog (@"Unknown operator.");
+}
+
++(void) testWithNumberOperatorFormat {
+    double value;
+    char operator;
+    Calculator *deskCalc = [[Calculator alloc] init];
+    BOOL continueExecution = true;
+    
+    NSLog(@"Starting calulation");
+
+    while (continueExecution) {
+        
+        scanf("%lf %c", &value, &operator);
+        
+        switch (operator) {
+            case '+':
+                [deskCalc add: value];
+                break;
+            case '-':
+                [deskCalc subtract: value];
+                break;
+            case '/':
+                [deskCalc divide: value];
+                break;
+            case '*':
+                [deskCalc multiply: value];
+                break;
+            case 'S':
+                [deskCalc setAccumulator: value];
+                break;
+            case 'E':
+                continueExecution = false;
+                break;
+            default:
+                NSLog(@"Unknown operator");
+                break;
+        }
+        NSLog(@"= %lf", [deskCalc accumulator]);
+    }
+    
+    NSLog(@"Finishing calulation");
+}
+
 @end
 

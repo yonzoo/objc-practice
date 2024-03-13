@@ -16,6 +16,8 @@
 #import "Triangular.h"
 #import "Factorial.h"
 #import "DigitsSum.h"
+#import "Divisable.h"
+#import "DigitsToWords.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -51,7 +53,20 @@ int main(int argc, const char * argv[]) {
 //        [Factorial test];
         
         // Exercise 8
-        [DigitsSum test];
+//        [DigitsSum test];
+        
+        // Decision making
+        // Exercise 1
+//        [Divisable test];
+        
+        // Exercise 2
+//        [Calculator testWithConditions];
+        
+        // Exercise 4
+//        [Calculator testWithNumberOperatorFormat];
+        
+        // Exercise 6
+//        [DigitsToWords test];
     }
     return 0;
 }

@@ -18,6 +18,7 @@
 #import "DigitsSum.h"
 #import "Divisable.h"
 #import "DigitsToWords.h"
+#import "Fraction.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -67,6 +68,14 @@ int main(int argc, const char * argv[]) {
         
         // Exercise 6
 //        [DigitsToWords test];
+        
+        // More on classes
+        // Exercise 1
+//        [Fraction test];
+        
+        // Exercise 8
+        [Complex test];
+
     }
     return 0;
 }

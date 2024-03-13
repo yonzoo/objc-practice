@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void) print;
 -(double) real;
 -(double) imaginary;
+-(Complex*) add: (Complex*) value;
 +(void) test;
 
 @end

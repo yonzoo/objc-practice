@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8134EF6E2BA74D9A00488BB6 /* ABCInheritance.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134EF6D2BA74D9A00488BB6 /* ABCInheritance.m */; };
+		8134EF782BA7525100488BB6 /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134EF772BA7525100488BB6 /* XYPoint.m */; };
+		8134EF7E2BA7561400488BB6 /* Rectangle2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134EF7D2BA7561400488BB6 /* Rectangle2.m */; };
+		8134EF822BA75CE600488BB6 /* GraphicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134EF812BA75CE600488BB6 /* GraphicObject.m */; };
+		8134EF842BA75E1E00488BB6 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134EF832BA75E1E00488BB6 /* Circle.m */; };
+		8134EF882BA764FF00488BB6 /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134EF872BA764FF00488BB6 /* Triangle.m */; };
 		813BD6AC2BA076D800A136D9 /* Triangular.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD6AB2BA076D800A136D9 /* Triangular.m */; };
 		813BD6B02BA0795000A136D9 /* Factorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD6AF2BA0795000A136D9 /* Factorial.m */; };
 		813BD6B52BA0814B00A136D9 /* DigitsSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 813BD6B42BA0814B00A136D9 /* DigitsSum.m */; };
@@ -36,6 +42,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8134EF6D2BA74D9A00488BB6 /* ABCInheritance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCInheritance.m; sourceTree = "<group>"; };
+		8134EF702BA74E6900488BB6 /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		8134EF712BA74E7100488BB6 /* ClassB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
+		8134EF722BA74E7800488BB6 /* ClassC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassC.h; sourceTree = "<group>"; };
+		8134EF732BA7509300488BB6 /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
+		8134EF762BA751E700488BB6 /* XYPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
+		8134EF772BA7525100488BB6 /* XYPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
+		8134EF7B2BA754E200488BB6 /* ClassB2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassB2.h; sourceTree = "<group>"; };
+		8134EF7C2BA755CD00488BB6 /* Rectangle2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle2.h; sourceTree = "<group>"; };
+		8134EF7D2BA7561400488BB6 /* Rectangle2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle2.m; sourceTree = "<group>"; };
+		8134EF802BA75C8400488BB6 /* GraphicObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
+		8134EF812BA75CE600488BB6 /* GraphicObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphicObject.m; sourceTree = "<group>"; };
+		8134EF832BA75E1E00488BB6 /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		8134EF852BA75E2800488BB6 /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		8134EF862BA7648400488BB6 /* Triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
+		8134EF872BA764FF00488BB6 /* Triangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
 		813BD6A82BA075D300A136D9 /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
 		813BD6A92BA076BA00A136D9 /* Triangular.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Triangular.h; sourceTree = "<group>"; };
 		813BD6AB2BA076D800A136D9 /* Triangular.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Triangular.m; sourceTree = "<group>"; };
@@ -82,6 +104,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8134EF6C2BA74D5100488BB6 /* inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				8134EF7F2BA75B8500488BB6 /* graphic_object */,
+				8134EF742BA751A500488BB6 /* floating_points */,
+				8134EF6F2BA74E5100488BB6 /* abc */,
+				8134EF732BA7509300488BB6 /* exercises.md */,
+			);
+			path = inheritance;
+			sourceTree = "<group>";
+		};
+		8134EF6F2BA74E5100488BB6 /* abc */ = {
+			isa = PBXGroup;
+			children = (
+				8134EF702BA74E6900488BB6 /* ClassA.h */,
+				8134EF712BA74E7100488BB6 /* ClassB.h */,
+				8134EF7B2BA754E200488BB6 /* ClassB2.h */,
+				8134EF722BA74E7800488BB6 /* ClassC.h */,
+				8134EF6D2BA74D9A00488BB6 /* ABCInheritance.m */,
+			);
+			path = abc;
+			sourceTree = "<group>";
+		};
+		8134EF742BA751A500488BB6 /* floating_points */ = {
+			isa = PBXGroup;
+			children = (
+				8134EF7C2BA755CD00488BB6 /* Rectangle2.h */,
+				8134EF762BA751E700488BB6 /* XYPoint.h */,
+				8134EF772BA7525100488BB6 /* XYPoint.m */,
+				8134EF7D2BA7561400488BB6 /* Rectangle2.m */,
+			);
+			path = floating_points;
+			sourceTree = "<group>";
+		};
+		8134EF7F2BA75B8500488BB6 /* graphic_object */ = {
+			isa = PBXGroup;
+			children = (
+				8134EF802BA75C8400488BB6 /* GraphicObject.h */,
+				8134EF852BA75E2800488BB6 /* Circle.h */,
+				8134EF862BA7648400488BB6 /* Triangle.h */,
+				8134EF812BA75CE600488BB6 /* GraphicObject.m */,
+				8134EF832BA75E1E00488BB6 /* Circle.m */,
+				8134EF872BA764FF00488BB6 /* Triangle.m */,
+			);
+			path = graphic_object;
+			sourceTree = "<group>";
+		};
 		813BD6A72B9F5FE000A136D9 /* program_looping */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +327,7 @@
 				813BD6A72B9F5FE000A136D9 /* program_looping */,
 				813BD6B72BA0E30600A136D9 /* making_decisions */,
 				89C16EED2BA1DEA100CF2E4D /* more_on_classes */,
+				8134EF6C2BA74D5100488BB6 /* inheritance */,
 				899EDD5A2B96378E0064D4D8 /* main.m */,
 			);
 			path = HelloWorld;
@@ -343,15 +413,21 @@
 				896D80A02B9C9CA100DA3CFE /* Rectangle.m in Sources */,
 				896D80902B9C8A3700DA3CFE /* PolynomialEvaluation.m in Sources */,
 				896D80792B9C7EC000DA3CFE /* DegreesConverter.m in Sources */,
+				8134EF822BA75CE600488BB6 /* GraphicObject.m in Sources */,
 				896D80822B9C7F6700DA3CFE /* Boat.m in Sources */,
 				896D809A2B9C8E4F00DA3CFE /* Complex.m in Sources */,
 				89C16EF32BA1DF4500CF2E4D /* Fraction.m in Sources */,
+				8134EF842BA75E1E00488BB6 /* Circle.m in Sources */,
 				813BD6B52BA0814B00A136D9 /* DigitsSum.m in Sources */,
+				8134EF6E2BA74D9A00488BB6 /* ABCInheritance.m in Sources */,
+				8134EF7E2BA7561400488BB6 /* Rectangle2.m in Sources */,
 				813BD6AC2BA076D800A136D9 /* Triangular.m in Sources */,
 				813BD6BD2BA0E3A400A136D9 /* Divisable.m in Sources */,
+				8134EF882BA764FF00488BB6 /* Triangle.m in Sources */,
 				896D80932B9C8C0F00DA3CFE /* ExpressionEvaluation.m in Sources */,
 				813BD6B02BA0795000A136D9 /* Factorial.m in Sources */,
 				813BD6C12BA1AF3E00A136D9 /* DigitsToWords.m in Sources */,
+				8134EF782BA7525100488BB6 /* XYPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

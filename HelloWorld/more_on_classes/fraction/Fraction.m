@@ -11,6 +11,10 @@
 
 @synthesize numerator, denominator;
 
+- (void) print {
+	[self print: true];
+}
+
 - (void) print : (bool) mustReduce
 {
     if (mustReduce) {
@@ -56,12 +60,11 @@
     denominator = d;
 }
 
-- (Fraction *) add: (Fraction *) f
+- (id) add: (id) f;
 {
-    Fraction *result = [[Fraction alloc] init];
+    id result = [[Fraction alloc] init];
     
-    result.numerator   = numerator * f.denominator + denominator * f.numerator;
-    result.denominator = denominator * f.denominator;
+	[result setTo:numerator * [f denominator] + denominator * [f numerator] over:denominator * [f denominator]];
     [result reduce];
     return result;
 }

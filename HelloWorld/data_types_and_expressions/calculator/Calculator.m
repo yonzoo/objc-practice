@@ -25,7 +25,7 @@
     return accumulator;
 }
 
--(double) add: (double) value {
+-(double) addValue: (double) value {
     accumulator += value;
     return accumulator;
 }
@@ -90,7 +90,7 @@
 +(void)test {
     Calculator *deskCalc = [[Calculator alloc] init];
     [deskCalc setAccumulator: 100.0];
-    NSLog (@"The result after add is %g", [deskCalc add:10]);
+    NSLog (@"The result after add is %g", [deskCalc addValue:10]);
     NSLog (@"The result after substract is %g", [deskCalc subtract:10]);
     NSLog (@"The result after multiply is %g", [deskCalc multiply:10]);
     NSLog (@"The result after divide is %g", [deskCalc divide:10]);
@@ -112,7 +112,7 @@
     scanf ("%lf %c %lf", &value1, &operator, &value2);
     if ( operator == '+' ) {
         [deskCalc setAccumulator: value1];
-        [deskCalc add: value2];
+        [deskCalc addValue: value2];
     }
     else if ( operator == '-' ) {
         [deskCalc setAccumulator: value1];
@@ -146,7 +146,7 @@
         
         switch (operator) {
             case '+':
-                [deskCalc add: value];
+                [deskCalc addValue: value];
                 break;
             case '-':
                 [deskCalc subtract: value];

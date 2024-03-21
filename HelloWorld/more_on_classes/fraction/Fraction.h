@@ -14,10 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property int numerator, denominator;
 
 - (void) print: (bool) mustReduce;
+- (void) print;
 - (double) convertToNum;
 - (void) setTo: (int) n over: (int) d;
 - (void) reduce;
-- (Fraction *) add: (Fraction *) f;
+- (id) add: (id) f;
 - (Fraction *) subtract: (Fraction *) f;
 - (Fraction *) multiply: (Fraction *) f;
 - (Fraction *) divide: (Fraction *) f;

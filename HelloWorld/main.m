@@ -134,6 +134,44 @@ int main(int argc, const char * argv[]) {
 //        XYPoint *point = [[XYPoint alloc] init];
 //        [point setX: 3 andY: 5];
 //        NSLog(@"Does rectangle contain a point?: Answer is %s", [rect containsPoint: point] ? "yes" : "no");
+		
+		// Polymorphism, dynamic typing
+		// Exercise 3
+//		id dataValue;
+//		XYPoint *point = [[XYPoint alloc] init];
+//		Fraction *f1 = [[Fraction alloc] init]; Complex *c1 = [[Complex alloc] init];
+//		[f1 setTo: 2 over: 5];
+//		[c1 setReal: 10.0 andImaginary: 2.5];
+//		[point setX:1.0 andY:3.0];
+//		
+//		// first dataValue gets a fraction
+//		dataValue = f1;
+//		[dataValue print];
+//		// now dataValue gets a complex number
+//		dataValue = c1;
+//		[dataValue print];
+//		// now data value gets point
+//		dataValue = point;
+//		[dataValue print];
+		
+		// Exercise 4
+//		id dataValue1, dataValue2, result;
+//		dataValue1 = [[Fraction alloc] init];
+//		dataValue2 = [[Fraction alloc] init];
+//		[dataValue1 setTo: 2 over: 5];
+//		[dataValue2 setTo: 3 over: 4];
+//		result = [dataValue1 add: dataValue2];
+//		
+//		[result print];
+//		
+//		dataValue1 = [[Complex alloc] init];
+//		dataValue2 = [[Complex alloc] init];
+//		[dataValue1 setReal:1.0 andImaginary:2.0];
+//		[dataValue2 setReal:3.0 andImaginary:4.0];
+//		result = [dataValue1 add: dataValue2];
+//		
+//		[result print];
+		
     }
     return 0;
 }

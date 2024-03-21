@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void) setX: (double) xVal andY: (double) yVal;
 
+-(void) print;
+
 @end
 
 NS_ASSUME_NONNULL_END

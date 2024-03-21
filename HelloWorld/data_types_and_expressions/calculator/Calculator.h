@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(double) accumulator;
 
 // arithmetic methods
--(double) add: (double) value;
+-(double) addValue: (double) value;
 -(double) subtract: (double) value;
 -(double) multiply: (double) value;
 -(double) divide: (double) value;

@@ -70,6 +70,7 @@
 		813BD6BE2BA0E86700A136D9 /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
 		813BD6C02BA1AF3E00A136D9 /* DigitsToWords.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitsToWords.m; sourceTree = "<group>"; };
 		813BD6C22BA1AF4A00A136D9 /* DigitsToWords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitsToWords.h; sourceTree = "<group>"; };
+		894649C42BAC764B00FD25B5 /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
 		896D80742B9C7E0A00DA3CFE /* DegreesConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DegreesConverter.h; sourceTree = "<group>"; };
 		896D80782B9C7EC000DA3CFE /* DegreesConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DegreesConverter.m; sourceTree = "<group>"; };
 		896D80812B9C7F6700DA3CFE /* Boat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boat.m; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		896D809F2B9C9CA100DA3CFE /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
 		896D80A22B9C9ED100DA3CFE /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		896D80A42B9C9EDC00DA3CFE /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		8976C8402BAC86A000087081 /* methods_for_working_with_dynamic_types.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = methods_for_working_with_dynamic_types.png; sourceTree = "<group>"; };
 		899EDD572B96378E0064D4D8 /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		899EDD5A2B96378E0064D4D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89C16EEC2BA1DE2300CF2E4D /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
@@ -217,6 +219,15 @@
 			path = digits_to_words;
 			sourceTree = "<group>";
 		};
+		894649C32BAC761B00FD25B5 /* polymorphism_and_dynamic_typing */ = {
+			isa = PBXGroup;
+			children = (
+				8976C83F2BAC867800087081 /* resources */,
+				894649C42BAC764B00FD25B5 /* exercises.md */,
+			);
+			path = polymorphism_and_dynamic_typing;
+			sourceTree = "<group>";
+		};
 		896D80772B9C7E8800DA3CFE /* data_types_and_expressions */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +314,14 @@
 			path = calculator;
 			sourceTree = "<group>";
 		};
+		8976C83F2BAC867800087081 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				8976C8402BAC86A000087081 /* methods_for_working_with_dynamic_types.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		899EDD4E2B96378E0064D4D8 = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +347,7 @@
 				813BD6B72BA0E30600A136D9 /* making_decisions */,
 				89C16EED2BA1DEA100CF2E4D /* more_on_classes */,
 				8134EF6C2BA74D5100488BB6 /* inheritance */,
+				894649C32BAC761B00FD25B5 /* polymorphism_and_dynamic_typing */,
 				899EDD5A2B96378E0064D4D8 /* main.m */,
 			);
 			path = HelloWorld;

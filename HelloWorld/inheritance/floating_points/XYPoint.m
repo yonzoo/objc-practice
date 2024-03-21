@@ -17,4 +17,8 @@
     self.y = yVal;
 }
 
+- (void) print {
+	NSLog(@"(%g, %g)", x, y);
+}
+
 @end

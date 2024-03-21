@@ -11,12 +11,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Complex: NSObject
 
+@property double real, imaginary;
+
 -(void) setReal: (double) a;
 -(void) setImaginary: (double) b;
+-(void) setReal: (double) a andImaginary: (double) b;
 -(void) print;
 -(double) real;
 -(double) imaginary;
--(Complex*) add: (Complex*) value;
+-(id) add: (id) value;
 +(void) test;
 
 @end

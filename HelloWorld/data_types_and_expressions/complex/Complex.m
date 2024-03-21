@@ -8,38 +8,26 @@
 #import "Complex.h"
 
 @implementation Complex
-{
-    double imaginary;
-    double real;
-}
 
--(double)real {
-    return real;
-}
-
--(double)imaginary {
-    return imaginary;
-}
+@synthesize real, imaginary;
 
 -(void)print {
     NSLog(@"%f + %fi", real, imaginary);
 }
 
--(void)setImaginary: (double) b {
-    imaginary = b;
-}
-
--(void)setReal :(double) a {
-    real = a;
-}
-
--(nonnull Complex *) add: (nonnull Complex *) value {
-    double resultReal = real + value.real;
-    double resultImaginary = imaginary + value.imaginary;
-    Complex *number = [[Complex alloc] init];
+-(id) add: (id) value;
+{
+    double resultReal = real + [value real];
+    double resultImaginary = imaginary + [value imaginary];
+    id number = [[Complex alloc] init];
     [number setReal:resultReal];
     [number setImaginary:resultImaginary];
     return number;
+}
+
+- (void)setReal:(double)a andImaginary:(double)b {
+	real = a;
+	imaginary = b;
 }
 
 +(void)test {

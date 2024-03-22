@@ -18,10 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (double) convertToNum;
 - (void) setTo: (int) n over: (int) d;
 - (void) reduce;
-- (id) add: (id) f;
-- (Fraction *) subtract: (Fraction *) f;
-- (Fraction *) multiply: (Fraction *) f;
-- (Fraction *) divide: (Fraction *) f;
 
 +(int) getCounter;
 +(void) incrementCounter;

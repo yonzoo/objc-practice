@@ -9,9 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Square: Rectangle2
+@interface Square: NSObject
 
--(id) initWithSide: (int) side;
+-(instancetype) initWithSide: (int) side;
+-(void) setSide: (int) s;
+-(int) side;
+-(int) area;
+-(int) perimeter;
 
 @end
 

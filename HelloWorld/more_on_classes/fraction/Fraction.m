@@ -6,8 +6,20 @@
 //
 
 #import "Fraction.h"
+#import "Fraction+MathOps.h"
 
 static int gCounter = 0;
+
+@interface Fraction (NSComparisonMethods)
+
+- (BOOL)isEqualTo: (id)object;
+- (BOOL)isLessThanOrEqualTo: (id)object;
+- (BOOL)isLessThan: (id)object;
+- (BOOL)isGreaterThanOrEqual: (id)object;
+- (BOOL)isGreaterThan: (id)object;
+- (BOOL)isNotEqual: (id)object;
+
+@end
 
 @implementation Fraction
 
@@ -62,46 +74,6 @@ static int gCounter = 0;
     denominator = d;
 }
 
-- (id) add: (id) f;
-{
-    id result = [[Fraction alloc] init];
-    
-	[result setTo:numerator * [f denominator] + denominator * [f numerator] over:denominator * [f denominator]];
-    [result reduce];
-	[Fraction incrementCounter];
-    return result;
-}
-
-- (Fraction *) subtract: (Fraction *) f
-{
-    Fraction *result = [[Fraction alloc] init];
-    
-    result.numerator   = numerator * f.denominator - denominator * f.numerator;
-    result.denominator = denominator * f.denominator;
-    [result reduce];
-    return result;
-}
-
-- (Fraction *) multiply: (Fraction *) f
-{
-    Fraction *result = [[Fraction alloc] init];
-    
-    result.numerator   = numerator * f.numerator;
-    result.denominator = denominator * f.denominator;
-    [result reduce];
-    return result;
-}
-
-- (Fraction *) divide: (Fraction *) f
-{
-    Fraction *result = [[Fraction alloc] init];
-    
-    result.numerator   = numerator * f.denominator;
-    result.denominator = denominator * f.numerator;
-    [result reduce];
-    return result;
-}
-
 - (void) reduce
 {
     int u = numerator;
@@ -153,7 +125,7 @@ static int gCounter = 0;
     NSLog(@"-");
     [fractionB print: false];
     NSLog(@"=");
-    result = [fractionA subtract: fractionB];
+    result = [fractionA sub: fractionB];
     [result print: false];
     
     // Multiplication
@@ -164,7 +136,7 @@ static int gCounter = 0;
     NSLog(@"*");
     [fractionB print: false];
     NSLog(@"=");
-    result = [fractionA multiply: fractionB];
+    result = [fractionA mul: fractionB];
     [result print: false];
     
     // Division
@@ -175,8 +147,77 @@ static int gCounter = 0;
     NSLog(@"/");
     [fractionB print: false];
     NSLog(@"=");
-    result = [fractionA divide: fractionB];
+    result = [fractionA div: fractionB];
     [result print: false];
+}
+
+@end
+
+@implementation Fraction (NSComparisonMethods)
+
+- (BOOL)isEqualTo: (id)object
+{
+	if (self.denominator != 0 && [object denominator] != 0)
+	{
+		double d1 = (double) self.numerator / self.denominator;
+		double d2 = (double) [object numerator] / [object denominator];
+		return d1 == d2;
+	}
+	else return NAN;
+}
+
+- (BOOL)isLessThanOrEqualTo: (id)object
+{
+	if (self.denominator != 0 && [object denominator] != 0)
+	{
+		double d1 = (double) self.numerator / self.denominator;
+		double d2 = (double) [object numerator] / [object denominator];
+		return d1 <= d2;
+	}
+	else return NAN;
+}
+
+- (BOOL)isLessThan: (id)object
+{
+	if (self.denominator != 0 && [object denominator] != 0)
+	{
+		double d1 = (double) self.numerator / self.denominator;
+		double d2 = (double) [object numerator] / [object denominator];
+		return d1 < d2;
+	}
+	else return NAN;
+}
+
+- (BOOL)isGreaterThanOrEqual: (id)object
+{
+	if (self.denominator != 0 && [object denominator] != 0)
+	{
+		double d1 = (double) self.numerator / self.denominator;
+		double d2 = (double) [object numerator] / [object denominator];
+		return d1 >= d2;
+	}
+	else return NAN;
+}
+
+- (BOOL)isGreaterThan: (id)object
+{
+	if (self.denominator != 0 && [object denominator] != 0)
+	{
+		double d1 = (double) self.numerator / self.denominator;
+		double d2 = (double) [object numerator] / [object denominator];
+		return d1 > d2;
+	}
+	else return NAN;
+}
+- (BOOL)isNotEqual: (id)object
+{
+	if (self.denominator != 0 && [object denominator] != 0)
+	{
+		double d1 = (double) self.numerator / self.denominator;
+		double d2 = (double) [object numerator] / [object denominator];
+		return d1 != d2;
+	}
+	else return NAN;
 }
 
 @end

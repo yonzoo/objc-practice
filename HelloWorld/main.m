@@ -184,6 +184,13 @@ int main(int argc, const char * argv[]) {
 //		fraction1 = [fraction1 add:fraction1];
 //		fraction1 = [fraction1 add:fraction1];
 //		NSLog(@"%i", [Fraction getCounter]);
+		
+		// Categories and protocols
+		// Exercise 5
+//		Square* square = [[Square alloc] initWithSide:5];
+//		NSLog(@"side of square: %i", [square side]);
+//		NSLog(@"area of square: %i", [square area]);
+//		NSLog(@"perimeter of square: %i", [square perimeter]);
     }
     return 0;
 }

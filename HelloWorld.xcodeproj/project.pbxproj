@@ -26,6 +26,9 @@
 		896D80A02B9C9CA100DA3CFE /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 896D809F2B9C9CA100DA3CFE /* Rectangle.m */; };
 		896D80A32B9C9ED100DA3CFE /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 896D80A22B9C9ED100DA3CFE /* Calculator.m */; };
 		899ACB7F2BAD94FF0073E59E /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 899ACB7E2BAD94FF0073E59E /* Square.m */; };
+		899ACB882BADB1760073E59E /* Fraction+MathOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 899ACB872BADB1760073E59E /* Fraction+MathOps.m */; };
+		899ACB8E2BADB5590073E59E /* Fraction+Comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 899ACB8D2BADB5590073E59E /* Fraction+Comparison.m */; };
+		899ACB942BADBA720073E59E /* Calculator+Trig.m in Sources */ = {isa = PBXBuildFile; fileRef = 899ACB932BADBA720073E59E /* Calculator+Trig.m */; };
 		899EDD5B2B96378E0064D4D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 899EDD5A2B96378E0064D4D8 /* main.m */; };
 		89C16EF32BA1DF4500CF2E4D /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C16EF22BA1DF4500CF2E4D /* Fraction.m */; };
 /* End PBXBuildFile section */
@@ -92,6 +95,13 @@
 		899ACB7C2BAD93310073E59E /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
 		899ACB7D2BAD94BB0073E59E /* Square.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
 		899ACB7E2BAD94FF0073E59E /* Square.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		899ACB812BADAFBC0073E59E /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
+		899ACB862BADB13E0073E59E /* Fraction+MathOps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fraction+MathOps.h"; sourceTree = "<group>"; };
+		899ACB872BADB1760073E59E /* Fraction+MathOps.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Fraction+MathOps.m"; sourceTree = "<group>"; };
+		899ACB8D2BADB5590073E59E /* Fraction+Comparison.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Fraction+Comparison.m"; sourceTree = "<group>"; };
+		899ACB8F2BADB5650073E59E /* Fraction+Comparison.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fraction+Comparison.h"; sourceTree = "<group>"; };
+		899ACB912BADBA550073E59E /* Calculator+Trig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calculator+Trig.h"; sourceTree = "<group>"; };
+		899ACB932BADBA720073E59E /* Calculator+Trig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Calculator+Trig.m"; sourceTree = "<group>"; };
 		899EDD572B96378E0064D4D8 /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		899EDD5A2B96378E0064D4D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89C16EEC2BA1DE2300CF2E4D /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
@@ -314,6 +324,7 @@
 		896D80A12B9C9EA500DA3CFE /* calculator */ = {
 			isa = PBXGroup;
 			children = (
+				899ACB922BADBA600073E59E /* trigonometry */,
 				896D80A42B9C9EDC00DA3CFE /* Calculator.h */,
 				896D80A22B9C9ED100DA3CFE /* Calculator.m */,
 			);
@@ -334,6 +345,43 @@
 				899ACB7C2BAD93310073E59E /* exercises.md */,
 			);
 			path = more_on_data_types;
+			sourceTree = "<group>";
+		};
+		899ACB802BADAF880073E59E /* categories_and_protocols */ = {
+			isa = PBXGroup;
+			children = (
+				899ACB8A2BADB5150073E59E /* comparison */,
+				899ACB892BADB49B0073E59E /* math_ops */,
+				899ACB812BADAFBC0073E59E /* exercises.md */,
+			);
+			path = categories_and_protocols;
+			sourceTree = "<group>";
+		};
+		899ACB892BADB49B0073E59E /* math_ops */ = {
+			isa = PBXGroup;
+			children = (
+				899ACB862BADB13E0073E59E /* Fraction+MathOps.h */,
+				899ACB872BADB1760073E59E /* Fraction+MathOps.m */,
+			);
+			path = math_ops;
+			sourceTree = "<group>";
+		};
+		899ACB8A2BADB5150073E59E /* comparison */ = {
+			isa = PBXGroup;
+			children = (
+				899ACB8F2BADB5650073E59E /* Fraction+Comparison.h */,
+				899ACB8D2BADB5590073E59E /* Fraction+Comparison.m */,
+			);
+			path = comparison;
+			sourceTree = "<group>";
+		};
+		899ACB922BADBA600073E59E /* trigonometry */ = {
+			isa = PBXGroup;
+			children = (
+				899ACB912BADBA550073E59E /* Calculator+Trig.h */,
+				899ACB932BADBA720073E59E /* Calculator+Trig.m */,
+			);
+			path = trigonometry;
 			sourceTree = "<group>";
 		};
 		899EDD4E2B96378E0064D4D8 = {
@@ -363,6 +411,7 @@
 				8134EF6C2BA74D5100488BB6 /* inheritance */,
 				894649C32BAC761B00FD25B5 /* polymorphism_and_dynamic_typing */,
 				899ACB7B2BAD93040073E59E /* more_on_data_types */,
+				899ACB802BADAF880073E59E /* categories_and_protocols */,
 				899EDD5A2B96378E0064D4D8 /* main.m */,
 			);
 			path = HelloWorld;
@@ -443,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899ACB882BADB1760073E59E /* Fraction+MathOps.m in Sources */,
 				899EDD5B2B96378E0064D4D8 /* main.m in Sources */,
 				896D80A32B9C9ED100DA3CFE /* Calculator.m in Sources */,
 				896D80A02B9C9CA100DA3CFE /* Rectangle.m in Sources */,
@@ -457,6 +507,7 @@
 				813BD6B52BA0814B00A136D9 /* DigitsSum.m in Sources */,
 				8134EF6E2BA74D9A00488BB6 /* ABCInheritance.m in Sources */,
 				8134EF7E2BA7561400488BB6 /* Rectangle2.m in Sources */,
+				899ACB942BADBA720073E59E /* Calculator+Trig.m in Sources */,
 				813BD6AC2BA076D800A136D9 /* Triangular.m in Sources */,
 				813BD6BD2BA0E3A400A136D9 /* Divisable.m in Sources */,
 				8134EF882BA764FF00488BB6 /* Triangle.m in Sources */,
@@ -464,6 +515,7 @@
 				813BD6B02BA0795000A136D9 /* Factorial.m in Sources */,
 				813BD6C12BA1AF3E00A136D9 /* DigitsToWords.m in Sources */,
 				8134EF782BA7525100488BB6 /* XYPoint.m in Sources */,
+				899ACB8E2BADB5590073E59E /* Fraction+Comparison.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 
 #import "Fraction.h"
 
+static int gCounter = 0;
+
 @implementation Fraction
 
 @synthesize numerator, denominator;
@@ -66,6 +68,7 @@
     
 	[result setTo:numerator * [f denominator] + denominator * [f numerator] over:denominator * [f denominator]];
     [result reduce];
+	[Fraction incrementCounter];
     return result;
 }
 
@@ -113,6 +116,16 @@
     
     numerator /= u;
     denominator /= u;
+}
+
++ (int) getCounter {
+	extern int gCounter;
+	return gCounter;
+}
+
++ (void)incrementCounter {
+	extern int gCounter;
+	gCounter++;
 }
 
 + (void)test {

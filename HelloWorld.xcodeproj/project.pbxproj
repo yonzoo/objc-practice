@@ -25,6 +25,7 @@
 		896D809A2B9C8E4F00DA3CFE /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = 896D80992B9C8E4F00DA3CFE /* Complex.m */; };
 		896D80A02B9C9CA100DA3CFE /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 896D809F2B9C9CA100DA3CFE /* Rectangle.m */; };
 		896D80A32B9C9ED100DA3CFE /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 896D80A22B9C9ED100DA3CFE /* Calculator.m */; };
+		899ACB7F2BAD94FF0073E59E /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 899ACB7E2BAD94FF0073E59E /* Square.m */; };
 		899EDD5B2B96378E0064D4D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 899EDD5A2B96378E0064D4D8 /* main.m */; };
 		89C16EF32BA1DF4500CF2E4D /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C16EF22BA1DF4500CF2E4D /* Fraction.m */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,9 @@
 		896D80A22B9C9ED100DA3CFE /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		896D80A42B9C9EDC00DA3CFE /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		8976C8402BAC86A000087081 /* methods_for_working_with_dynamic_types.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = methods_for_working_with_dynamic_types.png; sourceTree = "<group>"; };
+		899ACB7C2BAD93310073E59E /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
+		899ACB7D2BAD94BB0073E59E /* Square.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		899ACB7E2BAD94FF0073E59E /* Square.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 		899EDD572B96378E0064D4D8 /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		899EDD5A2B96378E0064D4D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89C16EEC2BA1DE2300CF2E4D /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
@@ -146,9 +150,11 @@
 				8134EF802BA75C8400488BB6 /* GraphicObject.h */,
 				8134EF852BA75E2800488BB6 /* Circle.h */,
 				8134EF862BA7648400488BB6 /* Triangle.h */,
+				899ACB7D2BAD94BB0073E59E /* Square.h */,
 				8134EF812BA75CE600488BB6 /* GraphicObject.m */,
 				8134EF832BA75E1E00488BB6 /* Circle.m */,
 				8134EF872BA764FF00488BB6 /* Triangle.m */,
+				899ACB7E2BAD94FF0073E59E /* Square.m */,
 			);
 			path = graphic_object;
 			sourceTree = "<group>";
@@ -322,6 +328,14 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		899ACB7B2BAD93040073E59E /* more_on_data_types */ = {
+			isa = PBXGroup;
+			children = (
+				899ACB7C2BAD93310073E59E /* exercises.md */,
+			);
+			path = more_on_data_types;
+			sourceTree = "<group>";
+		};
 		899EDD4E2B96378E0064D4D8 = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +362,7 @@
 				89C16EED2BA1DEA100CF2E4D /* more_on_classes */,
 				8134EF6C2BA74D5100488BB6 /* inheritance */,
 				894649C32BAC761B00FD25B5 /* polymorphism_and_dynamic_typing */,
+				899ACB7B2BAD93040073E59E /* more_on_data_types */,
 				899EDD5A2B96378E0064D4D8 /* main.m */,
 			);
 			path = HelloWorld;
@@ -431,6 +446,7 @@
 				899EDD5B2B96378E0064D4D8 /* main.m in Sources */,
 				896D80A32B9C9ED100DA3CFE /* Calculator.m in Sources */,
 				896D80A02B9C9CA100DA3CFE /* Rectangle.m in Sources */,
+				899ACB7F2BAD94FF0073E59E /* Square.m in Sources */,
 				896D80902B9C8A3700DA3CFE /* PolynomialEvaluation.m in Sources */,
 				896D80792B9C7EC000DA3CFE /* DegreesConverter.m in Sources */,
 				8134EF822BA75CE600488BB6 /* GraphicObject.m in Sources */,

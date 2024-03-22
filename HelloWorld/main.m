@@ -25,6 +25,7 @@
 #import "ClassC.h"
 #import "Circle.h"
 #import "Rectangle2.h"
+#import "Square.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -172,6 +173,17 @@ int main(int argc, const char * argv[]) {
 //		
 //		[result print];
 		
+		// More on data types
+		// Exercise 2
+//		Square *square = [[Square alloc] initWithSide:5];
+//		[square draw];
+		
+		// Exercise 3
+//		Fraction *fraction1 = [[Fraction alloc] init];
+//		[fraction1 setTo:1 over:5];
+//		fraction1 = [fraction1 add:fraction1];
+//		fraction1 = [fraction1 add:fraction1];
+//		NSLog(@"%i", [Fraction getCounter]);
     }
     return 0;
 }

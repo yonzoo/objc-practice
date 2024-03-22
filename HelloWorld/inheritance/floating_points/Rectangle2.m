@@ -14,6 +14,15 @@
 
 @synthesize width, height;
 
+- (id) initWithWidth: (int) w andHeight: (int) h
+{
+	self = [super init];
+	
+	if (self) {
+		[self setWidth: w andHeight: h];
+	}
+	return self;
+}
 - (double)area {
     return width * height;
 }

@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property double width, height;
 
+-(id) initWithWidth: (int) w andHeight: (int) h;
+
 -(XYPoint *) origin;
 
 -(void) translate: (XYPoint *) vector;

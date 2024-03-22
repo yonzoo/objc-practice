@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (Fraction *) multiply: (Fraction *) f;
 - (Fraction *) divide: (Fraction *) f;
 
++(int) getCounter;
++(void) incrementCounter;
 +(void) test;
 
 @end

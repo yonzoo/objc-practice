@@ -26,6 +26,7 @@
 #import "Circle.h"
 #import "Rectangle2.h"
 #import "Square.h"
+#import "Fraction+MathOps.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -191,6 +192,71 @@ int main(int argc, const char * argv[]) {
 //		NSLog(@"side of square: %i", [square side]);
 //		NSLog(@"area of square: %i", [square area]);
 //		NSLog(@"perimeter of square: %i", [square perimeter]);
+		
+		// Underlying C features
+		// Exercise 1
+//		double calculateAverage(double values[]);
+//		double array[10] = { 5, 5, 5, 3, 4, 5, 6, 7, 8, 9 };
+//		NSLog(@"Average is %g", calculateAverage(array));
+		
+		// Exercise 3
+//		generatePrimes(150);
+		
+		// Exercise 4
+//		int n = 3;
+//		
+//		Fraction* frac1 = [[Fraction alloc] init];
+//		Fraction* frac2 = [[Fraction alloc] init];
+//		Fraction* frac3 = [[Fraction alloc] init];
+//		[frac1 setTo:1 over:5];
+//		[frac2 setTo:3 over:5];
+//		[frac3 setTo:1 over:5];
+//
+//		Fraction* fractions[3] = { frac1, frac2, frac3 };
+//		[addFractions(fractions, n) print];
+		
+		// Exercise 5
+//		Date today = { .day = 1, .month = 2, .year = 21 };
+		
+		// Exercise 7
+//		char *message = "Programming in Objective-C is fun";
+//		char message2[] = "You said it";
+//		int x = 100;
+//		
+//		/*** set 1 ***/
+//		NSLog (@"Programming in Objective-C is fun");
+//		NSLog (@"%s", "Programming in Objective-C is fun");
+//		NSLog (@"%s", message);
+//		/*** set 2 ***/
+//		NSLog (@"You said it");
+//		NSLog (@"%s", message2);
+//		NSLog (@"%s", &message2[0]);
+//		/*** set 3 ***/
+//		NSLog (@"said it");
+//		NSLog (@"%s", message2 + 4);
+//		NSLog (@"%s", &message2[4]);
+		
+		// Exercise 8
+//		for (int i = 1; i < argc; i++) {
+//			NSLog(@"%s", argv[i]);
+//		}
+		
+		// Exercise 9
+//		NSLog (@"This is a test");
+//		NSLog ("This is a test");
+//		NSLog (@"%s", "This is a test");
+//		NSLog (@"%s", @"This is a test");
+//		NSLog ("%s", "This is a test");
+//		NSLog ("%s", @"This is a test");
+//		NSLog (@"%@", @"This is a test");
+//		NSLog (@"%@", "This is a test");
+		
+		// Exercise 10
+//		int a = 10, b = 5;
+//		
+//		exchange(&a, &b);
+//		
+//		NSLog(@"a = %i, b = %i", a, b);
     }
     return 0;
 }

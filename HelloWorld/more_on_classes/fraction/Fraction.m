@@ -10,6 +10,16 @@
 
 static int gCounter = 0;
 
+static int gcd (int u, int v) {
+	int temp;
+	while ( v != 0) {
+		temp = u % v;
+		u = v;
+		v = temp;
+	}
+	return u;
+}
+
 @interface Fraction (NSComparisonMethods)
 
 - (BOOL)isEqualTo: (id)object;
@@ -76,18 +86,11 @@ static int gCounter = 0;
 
 - (void) reduce
 {
-    int u = numerator;
-    int v = denominator;
-    int temp;
-    
-    while (v != 0) {
-        temp = u % v;
-        u = v;
-        v = temp;
-    }
-    
-    numerator /= u;
-    denominator /= u;
+	int gcd (int u, int v);
+	int divisor = gcd(numerator, denominator);
+
+    numerator /= divisor;
+    denominator /= divisor;
 }
 
 + (int) getCounter {

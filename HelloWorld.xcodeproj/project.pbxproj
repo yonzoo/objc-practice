@@ -102,6 +102,8 @@
 		899ACB8F2BADB5650073E59E /* Fraction+Comparison.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fraction+Comparison.h"; sourceTree = "<group>"; };
 		899ACB912BADBA550073E59E /* Calculator+Trig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calculator+Trig.h"; sourceTree = "<group>"; };
 		899ACB932BADBA720073E59E /* Calculator+Trig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Calculator+Trig.m"; sourceTree = "<group>"; };
+		899ACB962BADCCFD0073E59E /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
+		899ACB9A2BB2BB1D0073E59E /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
 		899EDD572B96378E0064D4D8 /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		899EDD5A2B96378E0064D4D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89C16EEC2BA1DE2300CF2E4D /* exercises.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = exercises.md; sourceTree = "<group>"; };
@@ -384,6 +386,22 @@
 			path = trigonometry;
 			sourceTree = "<group>";
 		};
+		899ACB952BADCCD90073E59E /* preprocessor */ = {
+			isa = PBXGroup;
+			children = (
+				899ACB962BADCCFD0073E59E /* exercises.md */,
+			);
+			path = preprocessor;
+			sourceTree = "<group>";
+		};
+		899ACB992BB2B9E60073E59E /* underlying_c_features */ = {
+			isa = PBXGroup;
+			children = (
+				899ACB9A2BB2BB1D0073E59E /* exercises.md */,
+			);
+			path = underlying_c_features;
+			sourceTree = "<group>";
+		};
 		899EDD4E2B96378E0064D4D8 = {
 			isa = PBXGroup;
 			children = (
@@ -412,6 +430,8 @@
 				894649C32BAC761B00FD25B5 /* polymorphism_and_dynamic_typing */,
 				899ACB7B2BAD93040073E59E /* more_on_data_types */,
 				899ACB802BADAF880073E59E /* categories_and_protocols */,
+				899ACB952BADCCD90073E59E /* preprocessor */,
+				899ACB992BB2B9E60073E59E /* underlying_c_features */,
 				899EDD5A2B96378E0064D4D8 /* main.m */,
 			);
 			path = HelloWorld;
